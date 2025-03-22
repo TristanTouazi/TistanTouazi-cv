@@ -1,0 +1,20 @@
+
+---
+
+### 📁 `.gitignore`
+
+```gitignore
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.gz
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.lof
+*.lot
+
+# VSCode
+.vscode/
