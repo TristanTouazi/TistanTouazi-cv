@@ -1,0 +1,27 @@
+{
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "xelatex + png",
+      "tools": ["xelatex", "pdf_to_png"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "xelatex",
+      "command": "xelatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-jobname=CV_Alexandre_DO_O_ALMEIDA_2025",
+        "%DOCFILE%"
+      ]
+    },
+    {
+      "name": "pdf_to_png",
+      "command": "python",
+      "args": ["pdf_to_png.py"]
+    }
+  ],
+  "latex-workshop.latex.autoBuild.run": "onFileChange"
+}

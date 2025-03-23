@@ -2,30 +2,16 @@
 
 This repository contains the LaTeX source for my one-page résumé.
 
-## 📄 Preview
-
-![Preview](image.png)
-
 ## 🧰 Prerequisites
 
-Make sure you have a working LaTeX distribution. Recommended:
+Installing Latex and it's a mess so use ChatGPT for instructions.
 
-- [TeX Live](https://www.tug.org/texlive/) (Linux/macOS)
-- [MikTeX](https://miktex.org/) (Windows)
-- [Overleaf](https://overleaf.com) (alternative online editor)
+## 📦 Installation
 
-Fonts and packages needed:
-
-- `noto` (Noto Sans)
-- `fontawesome`
-- `tikz`, `titlesec`, `xcolor`, `geometry`, `hyperref`, etc.
-
-Make sure your LaTeX install supports `fontspec` (i.e. use `xelatex` or `lualatex`, **not** `pdflatex`).
-
-## 🚀 Build Instructions
-
-In the root directory:
+There's a pip install to do also
 
 ```bash
-xelatex cv.tex
+pip install pdf2image
 ```
+
+And then the CTRL+S will automatically adapt the PDF and convert it to PNG. It's done in settings.json

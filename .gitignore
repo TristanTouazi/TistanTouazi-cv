@@ -15,6 +15,3 @@
 *.fdb_latexmk
 *.lof
 *.lot
-
-# VSCode
-.vscode/
