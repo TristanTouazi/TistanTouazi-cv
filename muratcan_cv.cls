@@ -51,8 +51,8 @@
 \hfill
 }
 
-\newcommand{\linkedinview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize LinkedIn}}
-\newcommand{\githubview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize GitHub}}
+\newcommand{\linkedinview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize alexandre-dooalmeida}}
+\newcommand{\githubview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize aleqsd}}
 
 \newcommand{\name}{%
     {\LARGE \color{\@themecolor} \@firstname \ \textsc{\@lastname}}\\[0.2ex]
