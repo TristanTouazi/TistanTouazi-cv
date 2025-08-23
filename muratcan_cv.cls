@@ -14,7 +14,10 @@
 \RequirePackage{tikz}
 \RequirePackage{fontspec}
 \RequirePackage[left=0.5in,top=0.1in,right=0.5in,bottom=0.1in]{geometry} % DOCUMENT MARGINS 
+\RequirePackage{url}
 \RequirePackage{hyperref}
+\urlstyle{same}
+\renewcommand\UrlFont{\normalfont}
 \RequirePackage{fontawesome}
 \RequirePackage{mfirstuc}
 \RequirePackage{ifthen}
@@ -60,7 +63,7 @@
 }
 
 \newcommand{\contact}{
-{\small \@mail \ {\color{black} \textbar} France (Remote) \\
+{\small \nolinkurl{\@mail} \ {\color{black} \textbar} France (Remote) \\
 \linkedinview \cpshalf \githubview \\
 }
 }
@@ -120,6 +123,3 @@
     \end{tabular}
   }
 }
-
-
-
