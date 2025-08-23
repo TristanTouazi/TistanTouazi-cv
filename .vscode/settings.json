@@ -1,9 +1,6 @@
 {
   "latex-workshop.latex.recipes": [
-    {
-      "name": "xelatex + png",
-      "tools": ["xelatex", "pdf_to_png"]
-    }
+    { "name": "xelatex + png", "tools": ["xelatex", "pdf_to_png"] }
   ],
   "latex-workshop.latex.tools": [
     {
@@ -17,11 +14,10 @@
         "%DOCFILE%"
       ]
     },
-    {
-      "name": "pdf_to_png",
-      "command": "python",
-      "args": ["pdf_to_png.py"]
-    }
+    { "name": "pdf_to_png", "command": "python", "args": ["pdf_to_png.py"] }
   ],
-  "latex-workshop.latex.autoBuild.run": "onFileChange"
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.recipe.default": "xelatex + png",
+  "latex-workshop.formatting.latex": "latexindent",
+  "latex-workshop.formatting.latexindent.path": "latexindent"
 }

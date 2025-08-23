@@ -36,33 +36,33 @@
 \newcommand*{\setgithubaccount}[1]{\def\@githubaccount{#1}}
 
 \hypersetup{
-    colorlinks=true,
-    urlcolor=NavyBlue, % URL COLOR!
+  colorlinks=true,
+  urlcolor=NavyBlue, % URL COLOR!
 }
 
 % Header
 \newcommand\headerview{
-\hfill
-\begin{minipage}{0.55\linewidth} % extend header length here
+  \hfill
+  \begin{minipage}{0.55\linewidth} % extend header length here
     \vspace{2ex}
     \center \name \\[0.1cm]
     \contact % address \ mobile \\ mail
-\end{minipage}
-\hfill
+  \end{minipage}
+  \hfill
 }
 
 \newcommand{\linkedinview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize alexandre-dooalmeida}}
 \newcommand{\githubview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize aleqsd}}
 
 \newcommand{\name}{%
-    {\LARGE \color{\@themecolor} \@firstname \ \textsc{\@lastname}}\\[0.2ex]
-    {\large \color{\@themecolor} Founding Engineer \textbar{} Technical Product Manager}
+{\LARGE \color{\@themecolor} \@firstname \ \textsc{\@lastname}}\\[0.2ex]
+{\large \color{\@themecolor} Senior DevOps \textbar{} Founding Engineer}
 }
 
 \newcommand{\contact}{
-    {\small \@mail \ {\color{black} \textbar} France (Remote) \\
-     \linkedinview \cpshalf \githubview \\
-    }
+{\small \@mail \ {\color{black} \textbar} France (Remote) \\
+\linkedinview \cpshalf \githubview \\
+}
 }
 
 % Helper commands
@@ -75,10 +75,10 @@
 
 % Edit section styles
 \titleformat{\section}      % Customise the \section command 
-  {\large\bfseries\scshape\raggedright\color{\@themecolor}} % Make the \section headers large (\Large),
-                               % small capitals (\scshape) and left aligned (\raggedright)
-  {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
-  {\ruleafter}                           % Can be used to insert code before the heading
+{\large\bfseries\scshape\raggedright\color{\@themecolor}} % Make the \section headers large (\Large),
+% small capitals (\scshape) and left aligned (\raggedright)
+{}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
+{\ruleafter}                           % Can be used to insert code before the heading
 
 \titlespacing*{\section}{-1pt}{-10pt}{0pt}
 
@@ -88,11 +88,11 @@
 }
 
 \newcommand{\datetext}[1]{%
-{\itshape  \footnotesize \mdseries  \color{black} #1 } 
+  {\itshape  \footnotesize \mdseries  \color{black} #1 }
 }
 
 \newcommand{\datetextbold}[1]{%
-{\footnotesize \mdseries  \color{black} \textbf{#1} } 
+  {\footnotesize \mdseries  \color{black} \textbf{#1} }
 }
 
 \newcommand{\datedexperience}[2]{%
@@ -100,25 +100,25 @@
 }
 
 \newcommand{\explanation}[2]{%
-    \mbox { \hspace{1.2em} \footnotesize \emph{#1}} \hfill \datetext{#2}\\[0.01cm] %
+  \mbox { \hspace{1.2em} \footnotesize \emph{#1}} \hfill \datetext{#2}\\[0.01cm] %
 }
 
 \newcommand{\explanationdetail}[1]{%
-    \indent \indent \begin{minipage}{0.87\linewidth} \footnotesize #1 \end{minipage} \\[0.1cm]
+  \indent \indent \begin{minipage}{0.87\linewidth} \footnotesize #1 \end{minipage} \\[0.1cm]
 }
 
 \newcommand\createskill[2]{%
-    \textbf{#1} & #2
+  \textbf{#1} & #2
 }
 
 \newcommand\createskills[1]{%
-\explanationdetail{
-  \begin{tabular}{rl}
-    \makeatletter
-    \@for\thisitem:=#1\do{\thisitem\\[0.1cm]}
-    \makeatother
+  \explanationdetail{
+    \begin{tabular}{rl}
+      \makeatletter
+      \@for\thisitem:=#1\do{\thisitem \\[0.1cm]}
+      \makeatother
     \end{tabular}
-}
+  }
 }
 
 
