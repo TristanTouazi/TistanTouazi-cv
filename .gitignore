@@ -1,17 +1,27 @@
-
----
-
-### 📁 `.gitignore`
-
-```gitignore
 # LaTeX intermediate files
 *.aux
 *.log
 *.out
 *.toc
-*.gz
 *.synctex.gz
 *.fls
 *.fdb_latexmk
 *.lof
 *.lot
+
+# Local build artifacts
+cv.pdf
+cv.out
+cv.log
+
+# Virtual environments
+.venv/
+venv/
+
+# OS/Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# PDF/PNG variants generated during export
+CV_Tristan_Touazi_2025-*.png
