@@ -1,4 +1,4 @@
-# Alexandre DO-O ALMEIDA — CV
+# Tristan Touazi — CV
 
 This repository contains the LaTeX source for my one-page résumé.
 

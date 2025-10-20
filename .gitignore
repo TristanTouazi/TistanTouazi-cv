@@ -25,3 +25,6 @@ Thumbs.db
 
 # PDF/PNG variants generated during export
 CV_Tristan_Touazi_2025-*.png
+
+# Windows reserved filename accidentally created
+NUL

@@ -54,18 +54,35 @@
   \hfill
 }
 
-\newcommand{\linkedinview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize alexandre-dooalmeida}}
-\newcommand{\githubview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize aleqsd}}
+% Social link renderers (show only if provided; display the URL or handle)
+\newcommand{\linkedinview}{%
+  \ifstrempty{\@linkedinaccount}{}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize \@linkedinaccount}}%
+}
+\newcommand{\githubview}{%
+  \ifstrempty{\@githubaccount}{}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize \@githubaccount}}%
+}
 
 \newcommand{\name}{%
-{\LARGE \color{\@themecolor} \@firstname \ \textsc{\@lastname}}\\[0.2ex]
-{\large \color{\@themecolor} Senior DevOps \textbar{} Founding Engineer}
+  {\LARGE \color{\@themecolor} \@firstname \ \textsc{\@lastname}}\\[0.2ex]
+  % Use provided position if set
+  \ifstrempty{\@position}{}{ {\large \color{\@themecolor} \@position} }
 }
 
-\newcommand{\contact}{
-{\small \nolinkurl{\@mail} \ {\color{black} \textbar} France (Remote) \\
-\linkedinview \cpshalf \githubview \\
-}
+\newcommand{\contact}{%
+  {\small
+    % First line: email, mobile, address (printed with separators if present)
+    \ifstrempty{\@mail}{}{\nolinkurl{\@mail}}
+    \ifstrempty{\@mobile}{}{\ifstrempty{\@mail}{}{\cpshalf} \@mobile}
+    \ifstrempty{\@address}{}{
+      \ifstrempty{\@mail}{\ifstrempty{\@mobile}{}{\cpshalf}}{\cpshalf}
+      \@address
+    }
+    \\
+    % Second line: LinkedIn and GitHub (only if provided)
+    \linkedinview
+    \ifstrempty{\@linkedinaccount}{}{\ifstrempty{\@githubaccount}{}{\cpshalf}}
+    \githubview \\
+  }
 }
 
 % Helper commands

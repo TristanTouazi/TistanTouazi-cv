@@ -10,7 +10,7 @@
         "-synctex=1",
         "-interaction=nonstopmode",
         "-file-line-error",
-        "-jobname=CV_Alexandre_DO_O_ALMEIDA_2025",
+        "-jobname=CV_Tristan_Touazi_2025",
         "%DOCFILE%"
       ]
     },
