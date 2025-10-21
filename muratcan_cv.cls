@@ -45,13 +45,11 @@
 
 % Header
 \newcommand\headerview{
-  \hfill
-  \begin{minipage}{0.55\linewidth} % extend header length here
+  \begin{minipage}{\linewidth}
     \vspace{2ex}
-    \center \name \\[0.1cm]
+    \centering \name \\[0.1cm]
     \contact % address \ mobile \\ mail
   \end{minipage}
-  \hfill
 }
 
 % Social link renderers (show only if provided; display the URL or handle)
@@ -116,15 +114,15 @@
 }
 
 \newcommand{\datedexperience}[2]{%
-  \begin{small} \mbox { \hspace{1em} \textbf{#1} } \end{small} \hfill \datetextbold{#2}\\[0.01cm] %
+  \noindent{\color{\@themecolor}\bfseries\fontsize{10.5pt}{12.5pt}\selectfont #1} \hfill \datetextbold{#2}\\[0.1cm] %
 }
 
 \newcommand{\explanation}[2]{%
-  \mbox { \hspace{1.2em} \footnotesize \emph{#1}} \hfill \datetext{#2}\\[0.01cm] %
+  \noindent\hspace{1.2em}{{\fontsize{10pt}{11.5pt}\selectfont\bfseries #1}} \hfill \datetext{#2}\\[0.05cm] %
 }
 
 \newcommand{\explanationdetail}[1]{%
-  \indent \indent \begin{minipage}{0.87\linewidth} \footnotesize #1 \end{minipage} \\[0.1cm]
+  \noindent\begin{minipage}{0.97\linewidth} \footnotesize #1 \end{minipage} \\[0.1cm]
 }
 
 \newcommand\createskill[2]{%
