@@ -1,0 +1,34 @@
+name fontawesome
+category Package
+revision 48145
+shortdesc Font containing web-related icons
+longdesc The package offers access to the large number of web-related
+longdesc icons provided by the included font. The package requires the
+longdesc package, fontspec, if run with XeTeX or LuaTeX.
+execute addMap fontawesome.map
+containersize 276180
+containerchecksum e08643104006c9e14c40bb965b4401a8fe296f43e5f39b285cd19d5aa0ed33602cc0eb6ffcc996e1d6e5aaa57dd906903324626ee40facdcb3cedc5216a3deb6
+doccontainersize 232920
+doccontainerchecksum bbd18a60db734922ea006ebd00b0c9f90c34907a7b519a08bf007daf01cceaaf6db3b31c3dd8c76e1dac199d4f7c312116f6935b764afb62248b7dcfd92ac78c
+runfiles size=120
+ fonts/enc/dvips/fontawesome/fontawesomeone.enc
+ fonts/enc/dvips/fontawesome/fontawesomethree.enc
+ fonts/enc/dvips/fontawesome/fontawesometwo.enc
+ fonts/map/dvips/fontawesome/fontawesome.map
+ fonts/opentype/public/fontawesome/FontAwesome.otf
+ fonts/tfm/public/fontawesome/FontAwesome--fontawesomeone.tfm
+ fonts/tfm/public/fontawesome/FontAwesome--fontawesomethree.tfm
+ fonts/tfm/public/fontawesome/FontAwesome--fontawesometwo.tfm
+ fonts/type1/public/fontawesome/FontAwesome.pfb
+ tex/latex/fontawesome/fontawesome.sty
+ tex/latex/fontawesome/fontawesomesymbols-generic.tex
+ tex/latex/fontawesome/fontawesomesymbols-pdftex.tex
+ tex/latex/fontawesome/fontawesomesymbols-xeluatex.tex
+ tex/latex/fontawesome/ufontawesomeone.fd
+ tex/latex/fontawesome/ufontawesomethree.fd
+ tex/latex/fontawesome/ufontawesometwo.fd
+catalogue-contact-repository https://github.com/xdanaux/fontawesome-latex
+catalogue-ctan /fonts/fontawesome
+catalogue-license lppl1.3
+catalogue-topics font font-supp-symbol font-symbol font-otf font-type1
+catalogue-version 4.6.3.2

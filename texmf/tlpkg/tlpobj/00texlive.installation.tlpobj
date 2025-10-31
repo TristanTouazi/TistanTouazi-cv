@@ -1,0 +1,5 @@
+name 00texlive.installation
+category TLCore
+depend opt_location:https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/tlnet-final
+depend setting_available_architectures:
+depend setting_usertree:1

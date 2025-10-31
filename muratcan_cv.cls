@@ -7,18 +7,26 @@
 \LoadClass[11pt]{article}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{muratcan_cv}[2020/04/15 Muratcan CV Class]
-\RequirePackage[sfdefault]{noto}
+\RequirePackage{iftex}
+\ifPDFTeX
+  \RequirePackage[scaled=0.95]{helvet}
+  \renewcommand*\familydefault{\sfdefault}
+  \RequirePackage{fontawesome}
+  \pdfmapfile{=fontawesome.map}
+\else
+  \RequirePackage[sfdefault]{noto}
+  \RequirePackage{fontspec}
+  \RequirePackage{fontawesome}
+\fi
 \RequirePackage{etoolbox}
 \RequirePackage{pgffor}
 \RequirePackage{titlesec}
 \RequirePackage{tikz}
-\RequirePackage{fontspec}
 \RequirePackage[left=0.5in,top=0.1in,right=0.5in,bottom=0.1in]{geometry} % DOCUMENT MARGINS 
 \RequirePackage{url}
 \RequirePackage{hyperref}
 \urlstyle{same}
 \renewcommand\UrlFont{\normalfont}
-\RequirePackage{fontawesome}
 \RequirePackage{mfirstuc}
 \RequirePackage{ifthen}
 \RequirePackage{lipsum}
@@ -118,11 +126,11 @@
 }
 
 \newcommand{\explanation}[2]{%
-  \noindent\hspace{1.2em}{{\fontsize{10pt}{11.5pt}\selectfont\bfseries #1}} \hfill \datetext{#2}\\[0.05cm] %
+  \noindent\hspace{1.2em}{{\fontsize{9pt}{10.5pt}\selectfont\itshape #1}} \hfill \datetext{#2}\\[0.05cm] %
 }
 
 \newcommand{\explanationdetail}[1]{%
-  \noindent\begin{minipage}{0.97\linewidth} \footnotesize #1 \end{minipage} \\[0.1cm]
+  \noindent\begin{minipage}{0.97\linewidth} \footnotesize #1 \end{minipage} \\[0.2cm]
 }
 
 \newcommand\createskill[2]{%
@@ -133,7 +141,7 @@
   \explanationdetail{
     \begin{tabular}{rl}
       \makeatletter
-      \@for\thisitem:=#1\do{\thisitem \\[0.1cm]}
+      \@for\thisitem:=#1\do{\thisitem \\[0.15cm]}
       \makeatother
     \end{tabular}
   }
